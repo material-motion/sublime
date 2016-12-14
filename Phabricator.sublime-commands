@@ -1,0 +1,16 @@
+[
+  {
+    "caption": "Phabricator: Show stack",
+    "command": "show_stack"
+  },
+
+  {
+    "caption": "Phabricator: Submit for code review",
+    "command": ""
+  },
+
+  {
+    "caption": "Phabricator: Land in GitHub",
+    "command": ""
+  }
+]
