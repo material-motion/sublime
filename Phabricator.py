@@ -43,6 +43,9 @@ class ShowStackCommand(sublime_plugin.WindowCommand):
 
     stack = git_output.split('\n')
 
+    commit_regex = re.compile('\* [a-z0-9]{7} (\([^)]+\) )?')
+    stack = [re.sub(commit_regex, '', commit) for commit in stack]
+
     # `show_quick_panel` draws a palette menu with the given `items`.
     self.window.show_quick_panel(
       items = stack,
